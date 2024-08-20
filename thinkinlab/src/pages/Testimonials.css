@@ -1,0 +1,126 @@
+/* src/components/Testimonials.css */
+
+.testimonials-section {
+    padding-top: 2rem;
+    background-color: #f9fafb; /* Light background for the section */
+  }
+  
+  .testimonials-container {
+    max-width: 7xl;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .testimonials-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+  .testimonials-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111827; /* Dark color for the title */
+  }
+  
+  .testimonials-cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
+  }
+  
+  .testimonial-card {
+    background-color: #ffffff; /* Default background color */
+    color: #111827; /* Default text color */
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  .testimonial-card:hover {
+    background-color: #000000; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+    padding: 2.5rem;
+  }
+  
+  .testimonial-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .testimonial-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .testimonial-name {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  .testimonial-role {
+    font-size: 0.875rem;
+  }
+  
+  .testimonial-text {
+    margin-top: 1.5rem;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .testimonials-cards {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .testimonials-cards {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+    }
+  }
+  
+  /* Animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .testimonial-card {
+    animation: slideIn 0.6s forwards;
+  }
+  
+  .testimonial-card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .testimonial-card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .testimonial-card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .testimonial-card:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .testimonial-card:nth-child(5) {
+    animation-delay: 1s;
+  }
+  
+  .testimonial-card:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  

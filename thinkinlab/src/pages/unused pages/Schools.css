@@ -1,0 +1,35 @@
+.schoolpage{
+    background-color: rgba(0, 0, 0, 0.658);
+    justify-content: space-around;
+}
+
+/* tabs.css */
+
+/* Styling for the tab buttons */
+.tab-button {
+    border-radius: 0.375rem; /* Tailwind equivalent of rounded-md */
+    margin-bottom: -1px;
+}
+
+.tab-button-active {
+    background-color: #ffffff; /* Tailwind equivalent of bg-white */
+    color: #3b82f6; /* Tailwind equivalent of text-blue-500 */
+    border-left: 1px solid #e5e7eb; /* Tailwind equivalent of border-gray-300 */
+    border-top: 1px solid #e5e7eb;
+    border-right: 1px solid #e5e7eb;
+    border-bottom: none;
+}
+
+.tab-button-inactive {
+    background-color: #e5e7eb; /* Tailwind equivalent of bg-gray-200 */
+    color: #4b5563; /* Tailwind equivalent of text-gray-700 */
+}
+
+/* Content area styling */
+.tab-content {
+    padding: 1rem; /* Tailwind equivalent of p-4 */
+    border: 1px solid #e5e7eb; /* Tailwind equivalent of border */
+    border-top: none; /* Tailwind equivalent of border-t-0 */
+    border-radius: 0 0 0.375rem 0.375rem; /* Tailwind equivalent of rounded-b-md */
+    background-color: #ffffff; /* Tailwind equivalent of bg-white */
+}

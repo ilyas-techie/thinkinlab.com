@@ -1,0 +1,77 @@
+/* Custom styles for BlackThemeCard component */
+.black-theme-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with some transparency */
+    color: white;
+    border-radius: 0.5rem; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+    max-width: 100%; /* Full width by default */
+    margin-bottom: 1rem; /* Space below each card */
+    text-align: center; /* Center text and button */
+  }
+  
+  .black-theme-card img {
+    width: 100%;
+    height: 12rem; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the card without distortion */
+  }
+  
+  .black-theme-card .content {
+    padding: 1rem; /* Default padding */
+  }
+  
+  .black-theme-card .title {
+    font-weight: bold;
+    font-size: 1.125rem; /* Base font size (text-lg) */
+    margin-bottom: 0.5rem;
+  }
+  
+  .black-theme-card .description {
+    font-size: 0.875rem; /* Base font size (text-sm) */
+    margin-bottom: 1rem;
+    text-align: start;
+  }
+  
+  .black-theme-card .button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+  }
+  
+  .black-theme-card .button {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .black-theme-card .button:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Increase transparency on hover */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (min-width: 768px) {
+    .black-theme-card {
+      max-width: 20rem; /* Restrict card width on medium screens and up */
+      margin-bottom: 1.5rem; /* Increased margin on medium screens */
+    }
+  
+    .black-theme-card .content {
+      padding: 1.5rem; /* Increased padding on medium screens */
+    }
+  
+    .black-theme-card .title {
+      font-size: 1.25rem; /* Larger font size (text-xl) on medium screens */
+    }
+  
+    .black-theme-card .description {
+      font-size: 1rem; /* Larger font size (text-base) on medium screens */
+    }
+  
+    .black-theme-card .button {
+      width: auto; /* Auto width on medium screens */
+    }
+  }
+  

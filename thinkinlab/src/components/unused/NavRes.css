@@ -1,0 +1,121 @@
+/* NavRes.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    position: relative; /* Ensure the position context for absolute elements */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px; /* Added padding for better appearance */
+    border-radius: 4px; /* Rounded corners for background */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Active Link Styles */
+.nav-links a.active {
+    background-color: #f07878;
+    color: white; /* Ensure text is visible on red background */
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    background-color: #f07878;
+    color: white; /* Ensure text is visible on red background */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000; /* Ensure the hamburger menu is on top */
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Close (X) Icon */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 8px;
+    position: relative;
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -8px;
+    position: relative;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+        text-align: center;
+        z-index: 999; /* Ensure the menu is above other content */
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}

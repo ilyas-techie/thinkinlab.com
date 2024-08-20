@@ -1,0 +1,47 @@
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.662);
+  }
+  
+  .carousel-slide {
+    background-color: transparent;
+ 
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .carousel-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .carousel-content p {
+    margin: 0;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  .arrow:hover {
+    opacity: 1;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  

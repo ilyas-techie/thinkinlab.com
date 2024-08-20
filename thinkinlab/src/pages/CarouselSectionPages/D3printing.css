@@ -1,0 +1,36 @@
+.hero-bg{
+    background-color: rgba(0, 0, 0, 0.662);
+    color: whitesmoke;
+}
+
+.quote-text{
+    margin-top: 4%;
+    color: whitesmoke;
+}
+
+
+.para-text{
+    color: whitesmoke;
+}
+
+
+
+  /* Default style for the image */
+.hero-pic {
+    margin-right: 5%;
+  }
+  
+  /* For medium screens (tablets, small laptops) */
+  @media (max-width: 768px) {
+    .hero-pic {
+        margin-top: 15%;
+        margin-right: 5%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-pic {
+        margin-top: 15%;
+        margin-right: 5%;
+    }
+  }
